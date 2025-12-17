@@ -1,4 +1,4 @@
-name: CI/CD Demo
+name: CI Demo
 
 on:
   push:
@@ -7,13 +7,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - 🐙 name: Checkout code
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - 🧪 name: Run test
-        run: echo "Test passed"
-
-      - 🚀 name: Deploy
-        run: echo "Deploy successful"
+      - name: Run demo
+        run: echo "CI/CD is running successfully!"
